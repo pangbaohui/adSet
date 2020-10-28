@@ -1,0 +1,83 @@
+/**
+* I think element-ui's default theme color is too light for long-term use.
+* So I modified the default color and you can modify it to your liking.
+**/
+
+/* theme color */
+//$--color-primary: #1890ff;
+$--color-primary: #a7ca6d;
+$--color-success: #13ce66;
+$--color-warning: #ffba00;
+$--color-danger: #ff4949;
+
+// $--color-info: #1E1E1E;
+
+$--button-font-weight: 400;
+
+// $--color-text-regular: #1f2d3d;
+
+$--border-color-light: #dfe4ed;
+$--border-color-lighter: #e6ebf5;
+
+$--table-border: 1px solid #dfe6ec;
+
+/* icon font path, required */
+$--font-path: "~element-ui/lib/theme-chalk/fonts";
+li.el-menu-item-group .el-menu-item-group__title{
+  padding: 0 !important;
+}
+.el-menu-item.is-active{
+  background-color: #96b662 !important;
+  //color: #ffd04b !important;
+}
+.app-main{
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+.drawer-page{
+  height: 100%;
+  overflow: hidden;
+}
+//.el-input__inner:focus {
+//  border-color: #ffba00 !important;
+//}
+@mixin flex-box($justify:center,$align:center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+.page-main-title{
+  @include flex-box(flex-start);
+  padding-left: 15px;
+  margin: 0 auto;
+  height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  border-bottom: 1px solid #cbcac2;
+  overflow-x: hidden;
+}
+
+@import "~element-ui/packages/theme-chalk/src/index";
+.el-collapse-item__header{
+  height: 35px;
+  font-weight: bold;
+}
+.el-collapse-item__content{
+  padding-bottom: 0;
+}
+.v-modal{
+  display: none;
+}
+.el-dialog__wrapper{
+  background-color: rgba(97,96,88,0.59);
+}
+
+//.el-collapse-item__wrap{
+//  height: auto !important;
+//}
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+:export {
+  theme: $--color-primary;
+}

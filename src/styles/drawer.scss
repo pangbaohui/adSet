@@ -1,0 +1,27 @@
+.drawer-page-main,.drawer-side{
+  box-sizing:border-box;
+  -moz-box-sizing:border-box; /* Firefox */
+  -webkit-box-sizing:border-box; /* Safari */
+  height: 100%;
+  transition: width 1s;
+  -moz-transition: width 1s;	/* Firefox 4 */
+  -webkit-transition: width 1s;	/* Safari 和 Chrome */
+  -o-transition: width 1s;	/* Opera */
+  background-color: white;
+  box-shadow: 0 0 5px #c5c5c5;
+}
+.drawer-side{
+  width: 300px;
+  float: right;
+}
+.drawer-side-t-w{
+  width: 0px;
+}
+.drawer-page-main{
+  width: calc(100% - 310px);
+  float: left;
+  overflow:hidden;
+}
+.drawer-page-main-t-w{
+  width: 100%;
+}

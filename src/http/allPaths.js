@@ -1,0 +1,17 @@
+// export const API_BASE = 'http://192.168.0.158:8051'
+export const API_BASE = 'http://112.74.99.190/adverisement'
+
+export const USER = API_BASE + '/user/ph'
+
+export const GET_MATERIAL_TYPE = API_BASE + '/materialType/ph'
+export const GET_MATERIAL_PRICE = API_BASE + '/materialPrice/ph'
+export const GET_TOKEN_URL = 'http://39.107.237.224/puze-controller/getToken'
+export const GET_REGION_CODE = API_BASE + '/regionAmp/ph'
+export const GET_TEMPLATE_CONTENT = API_BASE + '/templateContentType/ph'
+export const GET_SYSTEM_TEMPLATE = API_BASE + '/systemTemplate/ph'
+export const GET_TEMPLATE_DETAIL = API_BASE + '/templateTypeDetail/ph'
+export const GET_CONTENT_TYPE = API_BASE + '/machineTemplateType/ph'
+export const GET_PLAY_CONTENT = API_BASE + '/templateContent/ph'
+export const GET_PLAY_DETAIL = API_BASE + '/templateDetail/ph'
+export const GET_ONE_PRICE = API_BASE + '/materialPriceId/ph'
+export const GET_MACHINE = API_BASE + '/materialMachine/ph'
